@@ -5,26 +5,26 @@
  * Time: 16:56 CST
  */
 public class Puppy {
-    int puppyAge;
+    private int puppyAge;
 
-    public Puppy(String name) {
+    private Puppy(String name) {
         System.out.println("Passed name is :" + name);
             }
 
-    public void setPuppyAge(int age) {
+    private void setPuppyAge(int age) {
         puppyAge = age;
     }
 
-    public int  getAge(){
+    private int  getAge() {
         System.out.println("Puppy's age is :" + puppyAge);
     return puppyAge;
     }
 
     public static void main(String[] Args) {
-        Puppy thisPuppy=new Puppy("tom");
-        thisPuppy.setPuppyAge( 2 );
-        thisPuppy.getAge();
-        System.out.println("the Value is: " + thisPuppy.puppyAge);
+        Puppy puppyNameTom=new Puppy("Tom");
+        puppyNameTom.setPuppyAge( 2 );
+        puppyNameTom.getAge();
+        System.out.println("the Value is: " + puppyNameTom.puppyAge);
     }
 
 }
